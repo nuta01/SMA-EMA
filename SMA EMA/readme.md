@@ -7,6 +7,8 @@
 
 ![損益](https://github.com/nuta01/SMA-EMA/blob/master/SMA%20EMA/2019-04-03_01h58_01.png?raw=true "最適化した損益の中で最も良かったもの")
 
+![エントリー](https://github.com/nuta01/SMA-EMA/blob/master/SMA%20EMA/2020-04-05_23h23_06.png?raw=true "エントリーの様子")
+
 ## Features
 
 「SMA EMA」は
