@@ -1,60 +1,54 @@
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
+# SMA EMA
 
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
-
-"hoge"が何かを簡潔に紹介する
+これはMT4プラットフォーム上で動作するExpertAdvisor(以下EA)及びテクニカルインディケーターを利用した自動売買プログラムです。
+インディケーターとして主にSMA、及びEMAを用います。
 
 ## DEMO
 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+![損益](https://github.com/nuta01/SMA-EMA/blob/master/SMA%20EMA/2019-04-03_01h58_01.png?raw=true "最適化した損益の中で最も良かったもの")
 
 ## Features
 
-"hoge"のセールスポイントや差別化などを説明する
+「SMA EMA」は
+
+* 年間で1000回以上のエントリ
+* 最終的な利益
+* スキャルピングストラテジー
+
+を目標として開発を行ったEAで、チャートの波形を引き延ばすように押し目でエントリーを行うスキャルピングEAでありながら、トレーリングストップを備え、ボラティリティの大きい相場ではそれに追従して大きな利益を確保するロジックになっています。
+
 
 ## Requirement
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
-* huga 3.5.2
-* hogehuga 1.0.2
-
-## Installation
-
-Requirementで列挙したライブラリなどのインストール方法を説明する
-
-```bash
-pip install huga_package
-```
+* MQL4
 
 ## Usage
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+パラメーターの説明
 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
+|パラメーター名|説明|
+|:---|:---|
+|Lots1|発注するlot数|
+|slippage|許容スリッページ|
+|MaxSpread|許容スプレッド|
+|SMA_EMAperiod|SMA及びEMAの平均化期間|
+|ffff|長期SMAの期間|
+|TP1|利確幅(ポイント)|
+|SL1|損切幅(ポイント)|
+|pos|保有可能ポジション数|
+|interval|エントリー制限時間(分)|
+|magic1|マジックナンバー(注文識別番号)|
+|Order1|発注許可|
+|EarlyClose01|リスク回避の注文クローズ許可|
+|TrailingStop1|トレーリングストップ許可|
+|Trailing_Stop1|トレーリングの追従幅|
+|BE1|ブレークイーブン許可|
+|BErim1|ブレークイーブンが行われる位置|
+|BEPoint1|ブレークイーブンで損切が置かれる位置|
+|stocBUY|ストキャスティクスによる買いタイミング|
+|stocSELL|ストキャスティクスによる売りタイミング|
 
 ## Note
 
-注意点などがあれば書く
-
-## Author
-
-作成情報を列挙する
-
-* 作成者
-* 所属
-* E-mail
-
-## License
-
-ライセンスを明示する
-
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
+「SMA EMA」は現在開発途上であり、使用を勧められるモノではございません。
+またプログラミング初学者によって完全なる独学によって開発されているため、乱筆乱文ございます。
